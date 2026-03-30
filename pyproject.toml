@@ -6,14 +6,13 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "accelerate>=1.13.0",
-    "datasets>=4.8.4",
     "jupyter>=1.1.1",
     "numpy>=2.4.3",
     "pandas>=3.0.1",
     "torch>=2.11.0",
     "torchaudio>=2.11.0",
     "torchvision>=0.26.0",
-    "transformers>=5.4.0",
+    "unsloth>=2026.3.17",
 ]
 
 [[tool.uv.index]]
@@ -34,6 +33,8 @@ torchaudio = [
   { index = "pytorch-gpu", marker = "sys_platform == 'win32'" },
   { index = "pytorch-gpu", marker = "sys_platform == 'linux'" },
 ]
+unsloth = { git = "https://github.com/unslothai/unsloth.git" }
+unsloth-zoo = { git = "https://github.com/unslothai/unsloth-zoo.git" }
 
 [tool.ruff]
 line-length = 88

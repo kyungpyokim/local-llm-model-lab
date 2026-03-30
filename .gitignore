@@ -6,5 +6,9 @@ dist/
 wheels/
 *.egg-info
 
+models/
+outputs/
+unsloth_*/
+
 # Virtual environments
 .venv
